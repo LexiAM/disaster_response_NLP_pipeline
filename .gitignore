@@ -1,4 +1,5 @@
 .ipynb_checkpoints
 * - original*
-data/
 drenv/
+.vscode/
+tmp/
