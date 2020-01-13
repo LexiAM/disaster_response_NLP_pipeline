@@ -1,5 +1,7 @@
 .ipynb_checkpoints
-* - original*
-drenv/
 .vscode/
+drenv/
 tmp/
+* - original*
+*.pkl
+
