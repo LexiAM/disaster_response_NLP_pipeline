@@ -73,10 +73,10 @@ def build_model():
 def evaluate_model(model, X_test, Y_test, category_names):
     """ Print message classification model evaluation report.
             For each category:
-            - Precision
-            - Recall
-            - F1 score
-            - Support
+                - Precision
+                - Recall
+                - F1 score
+                - Support
 
             Summary:
                 - Micro avg for each score type
