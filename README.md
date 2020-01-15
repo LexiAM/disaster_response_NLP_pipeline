@@ -21,6 +21,10 @@ Initial simplistic model performance is sub-par, *as expected*. There are multip
   - Integrate re-sampling (SMOTE, ADASYN) into training pipeline
 - Use recall or f1-score model evaluation instead of Hamming Loss
 
+## Acknowledgements
+- Template code and notebooks are provided by **Udacity**
+- Training data set is provided by **Figure Eight**
+
 ---
 
 ## Requirements
