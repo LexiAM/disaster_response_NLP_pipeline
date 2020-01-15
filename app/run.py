@@ -103,12 +103,20 @@ def index():
 
             'layout': {
                 'title': 'Distribution of Message Sources',
+                'xaxis': {
+                    'title': "Source"
+                },
                 'yaxis': {
                     'title': "Count"
                 },
-                'xaxis': {
-                    'title': "Source"
-                }
+                'width': 1000,
+                'margin': dict(
+                    l=200,
+                    r=30,
+                    b=180,
+                    t=30,
+                    pad=4
+                ),
             }
         },
 
@@ -129,9 +137,10 @@ def index():
                     'automargin': "true",
                 },
                 'yaxis': {
-                    'title': "Category",
                     'autorange': "reversed"
                 },
+                'height':800,
+                'width': 1000,
                 'margin': dict(
                     l=200,
                     r=30,
@@ -171,17 +180,17 @@ def index():
                     'title': "Percent of Messages From Source (%)"
                 },
                 'yaxis': {
-                    'title': "Category",
                     'autorange': "reversed"
                 },
                 'barmode': "stack",
+                'height':800,
                 'margin': dict(
                     l=200,
                     r=30,
                     b=180,
                     t=30,
                     pad=4
-                )
+                ),
             }
         },
 
@@ -201,7 +210,16 @@ def index():
                 'yaxis': {
                     'autorange': "reversed"
                 },
-            }
+                'height':800,
+                'width': 1000,
+                'margin': dict(
+                    l=200,
+                    r=30,
+                    b=180,
+                    t=30,
+                    pad=4
+                ),
+            },
         },
 
 
