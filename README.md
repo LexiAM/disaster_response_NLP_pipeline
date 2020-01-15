@@ -3,7 +3,7 @@
 ## Summary
 This project uses Natural Language Processing (NLP) to categorize natural disaster related messages from news, social media, and direct reports into 36 non-exclusive categories. ETL pipeline is used for cleaning and storing data in an SQLite database. ML pipeline is used to train multi-output (milti-label) classification model. Flask-based web application allows users to input custom messages for categorization using model pre-trained on **Figure Eight** / **Udacity** disaster response messages training data set. 
 
-![Main page](resources/main_page_crop.png?raw=true)
+![](resources/main_page_crop.PNG?raw=true)
 
 ## Methods
 Message classification pipeline consistes of message text pre=processing with `spacy` NLP package to produce normalized and lemmatized using correct part of speech word tokens. The tokens are fed into TF-IDF transformer and then into machine learning classifier.
