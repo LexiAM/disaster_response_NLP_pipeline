@@ -3,7 +3,7 @@
 ## Summary
 This project uses Natural Language Processing (NLP) to categorize natural disaster related messages from news, social media, and direct reports into 36 non-exclusive categories. ETL pipeline is used for cleaning and storing data in an SQLite database. ML pipeline is used to train multi-output (milti-label) classification model. Flask-based web application allows users to input custom messages for categorization using model pre-trained on **Figure Eight** / **Udacity** disaster response messages training data set. 
 
-![Main page](/resources/main_page_crop.png)
+![Main page](/resources/main_page_crop.png?raw=true)
 
 ## Methods
 Message classification pipeline consistes of message text pre=processing with `spacy` NLP package to produce normalized and lemmatized using correct part of speech word tokens. The tokens are fed into TF-IDF transformer and then into machine learning classifier.
@@ -27,24 +27,24 @@ Initial simplistic model performance is sub-par, *as expected*. There are multip
 Application uses Python 3.6+ with packages listed in `requirements.txt`
 
 ## Project structure
-|-- notebooks/
-    |-- `Training Data Exploration`: notebook exploring the training dataset
-    |-- `ETL Pipeline Preparation.ipynb`: notebook detailing pipeline ETL steps
-    |-- `ETL Pipeline Preparation.ipynb`: notebook detailing pipeline ML steps
-|-- data/
-    |-- `disaster_categories.csv`: training data categories for each message
-    |--  `disaster_messages.csv`: training data message with id's corresponding to those in `disaster_categories.csv`
-    |--  `DisasterResponse.db`: clean data pre-processed for classification task and stored in SQLite database
-    |--  `process_data.py`: ETL pipeline module for data loading, cleaning, and storing data
-|-- models/
-    |-- `train_classifier.py`: ML pipeline module for loading data and training, evaluating and storing pre-trained model in .pkl file
-|-- app/
-    |-- templates/
-        |-- `go.html`: 
-        |-- `master.html`:
-    |-- `run.py`: Flask application module for running web-app
-
-Note: due to large size *.pkl models are not provided in this repository
+|-- notebooks/  
+    |-- `Training Data Exploration`: notebook exploring the training dataset  
+    |-- `ETL Pipeline Preparation.ipynb`: notebook detailing pipeline ETL steps  
+    |-- `ETL Pipeline Preparation.ipynb`: notebook detailing pipeline ML steps  
+|-- data/  
+    |-- `disaster_categories.csv`: training data categories for each message  
+    |--  `disaster_messages.csv`: training data message with id's corresponding to those in `disaster_categories.csv`  
+    |--  `DisasterResponse.db`: clean data pre-processed for classification task and stored in SQLite database  
+    |--  `process_data.py`: ETL pipeline module for data loading, cleaning, and storing data  
+|-- models/  
+    |-- `train_classifier.py`: ML pipeline module for loading data and training, evaluating and storing pre-trained model in .pkl file  
+|-- app/  
+    |-- templates/  
+        |-- `go.html`:   
+        |-- `master.html`:  
+    |-- `run.py`: Flask application module for running web-app  
+  
+Note: due to large size *.pkl models are not provided in this repository.
 
 ## Instructions:
 1. Run the following commands in the project's root directory to set up your database and model
