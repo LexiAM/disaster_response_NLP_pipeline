@@ -6,7 +6,7 @@ This project uses Natural Language Processing (NLP) to categorize natural disast
 ![](resources/main_page_crop.PNG?raw=true)
 
 ## Methods
-Message classification pipeline consistes of message text pre=processing with `spacy` NLP package to produce normalized and lemmatized using correct part of speech word tokens. The tokens are fed into TF-IDF transformer and then into machine learning classifier.
+Message classification pipeline consistes of message text pre-processing with `spacy` NLP package to produce normalized and lemmatized using correct part of speech word tokens. The tokens are fed into TF-IDF transformer and then into machine learning classifier.
 
 Initial classifier model (see discussion below) utilizes a very simplistic approach of Complement Naive Bayees Classifier, chosen for its preferred usage with imbalanced classes, wrapped in a MultiOutputClassifier for multi-label classification. Model selection was performed with 5-fold GridSearch cross-validation using Hamming Loss minimazation for scoring.
 
@@ -55,7 +55,7 @@ Note: due to large size *.pkl models are not provided in this repository.
     - To run ML pipeline that trains classifier and saves
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 
-2. Run the following command in the app's directory to run your web app
-    `python run.py`
+2. Run the following command in the projects root directory to run your web app
+    `python app/run.py`
 
 3. Application webpage can be found on your local machine by going to http://127.0.0.1:5000/
