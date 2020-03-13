@@ -20,7 +20,7 @@ Incorporation of per-output class balancing over-sampling into the training proc
 
 RECALL SCORES:
 
-
+```
 message class higly | ComplementNB | SMOTE + ComplementNB |   RF     | RF + SMOTE |
 imbalanced classes  |              |                      |          |            |
 -----------------------------------------------------------------------------------
@@ -37,7 +37,8 @@ micro avg           |    0.51      |    **0.77**          |    0.54  |    0.60  
 macro avg           |    0.17      |    **0.62**          |    0.21  |    0.29    |
 weighted avg        |    0.51      |    **0.77**          |    0.54  |    0.60    |
 samples avg         |    0.48      |    **0.59**          |    0.48  |    0.50    |
-  
+```
+
 It is important to note that while SMOTE significantly improved classification recall, aggressive synthetic oversampling resulted in reduced classification precision. Further sampling and model selection optimization is necessarry, perhaps using F1 scoring to maintain balance between precision and recall.
 
 ## Model Improvement Next Steps
